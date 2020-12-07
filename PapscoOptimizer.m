@@ -78,14 +78,14 @@ elseif ratio < risk && initialBet-delta > 0
 end
 
  if delta >2
-     %delta = round(delta - .01*delta);
+     delta = round(delta - .01*delta);
  end
 
 end
 disp('Optimal bet is')
 disp(round(mean(results)))
 % plot(1:1:length(Bets),Bets) %uncomment to display plots showing all
-% attempted guess and successful attempted guesses
+% %attempted guess and successful attempted guesses
 % hold on
 % plot(1:1:length(Bets),Succ)
 
